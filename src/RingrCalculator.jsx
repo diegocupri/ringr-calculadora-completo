@@ -79,8 +79,8 @@ export default function RingrCalculator() {
 
   return (
     <div className="p-6 max-w-md mx-auto bg-[#F8F9FA] rounded-2xl shadow grid gap-4">
-      <h1 className="text-2xl font-bold text-[#1D1E2C] text-center leading-tight">Ahorro estimado</h1>
-      <p className="text-xs text-gray-500 text-center mb-2">Calcula el ahorro usando Ringr frente a personal interno.</p>
+      <h1 className="text-2xl font-bold text-[#1D1E2C] text-center leading-tight">Ahorro y alcance estimado</h1>
+      <p className="text-xs text-gray-500 text-center mb-2">Calcula todo el potencial que Ringr podría ofrecerte.</p>
 
       <div className="grid gap-4 text-sm">
         <div className="grid gap-2">
@@ -109,19 +109,19 @@ export default function RingrCalculator() {
         <CardContent className="p-5 grid grid-cols-2 gap-y-5 gap-x-4 text-sm text-center">
           <div>
             <p className="text-[#1D1E2C]">Coste empleados*</p>
-            <p className="text-lg font-bold text-[#1D1E2C]">{formatNumber(Math.round(employeeCost))} €</p>
+            <p className="text-lg font-semibold text-[#1D1E2C]">{formatNumber(Math.floor(employeeCost))} €</p>
           </div>
           <div>
             <p className="text-[#1D1E2C]">Coste Ringr</p>
-            <p className="text-lg font-bold text-[#8857FC]">{formatNumber(ringrCost)} €</p>
+            <p className="text-lg font-semibold text-[#8857FC]">{formatNumber(Math.floor(ringrCost))} €</p>
           </div>
           <div>
-            <p className="text-[#1D1E2C]">Empleados</p>
-            <p className="text-lg font-semibold">{formatNumber(employeesNeeded)}</p>
+            <p className="text-[#1D1E2C]">Nº Empleados</p>
+            <p className="text-lg font-semibold">{formatNumber(Math.floor(employeesNeeded))} €</p>
           </div>
           <div>
             <p className="text-[#1D1E2C]">Ahorro</p>
-            <p className="text-lg font-bold text-green-600">{formatNumber(Math.round(monthlySavings))} € ({savingsPercent}%)</p>
+            <p className="text-lg font-semibold text-green-600">{formatNumber(Math.floor(monthlySavings))} € ({savingsPercent}%)</p>
           </div>
           <div className="col-span-2">
             <Button className="w-full bg-[#8857FC] hover:bg-[#7740db] text-white text-sm px-4 py-2 rounded-xl">Solicitar demo</Button>
