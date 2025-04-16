@@ -82,10 +82,10 @@ export default function RingrCalculator() {
   const sliderThumbClass = "[&>div>span]:bg-[#8857FC] [&>div>div]:bg-gradient-to-r [&>div>div]:from-[#44CCFF] [&>div>div]:to-[#8857FC]";
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-[#F8F9FA] rounded-2xl shadow grid gap-4">
+   /* <div className="p-6 max-w-md mx-auto bg-[#F8F9FA] rounded-2xl shadow grid gap-4">
       <h1 className="text-2xl font-bold text-[#1D1E2C] text-center leading-tight">Ahorro y alcance estimado</h1>
       <p className="text-xs text-gray-500 text-center mb-2">Calcula todo el potencial que Ringr podría ofrecerte.</p>
-
+    */
       <div className="grid gap-4 text-sm">
         <div className="grid gap-2">
           <Label className="text-[#1D1E2C] mb-1">Llamadas al mes</Label>
