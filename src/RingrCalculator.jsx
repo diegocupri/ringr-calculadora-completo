@@ -121,7 +121,7 @@ export default function RingrCalculator() {
           </div>
           <div>
             <p className="text-[#1D1E2C]">Nº Empleados</p>
-            <p className="text-lg font-semibold">{formatNumber(Math.floor(employeesNeeded))} €</p>
+            <p className="text-lg font-semibold">{formatNumber(Math.floor(employeesNeeded))} </p>
           </div>
           <div>
             <p className="text-[#1D1E2C]">Ahorro</p>
