@@ -10,7 +10,7 @@ export function Slider({ value, min, max, step, onValueChange, className }) {
       step={step}
       value={value[0]}
       onChange={(e) => onValueChange([+e.target.value])}
-      className={`w-full h-2 bg-gradient-to-r from-[#44CCFF] to-[#8857FC] rounded-lg appearance-none cursor-pointer ${className}`}
+      className={`w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer ${className}`}
     />
   );
 }
