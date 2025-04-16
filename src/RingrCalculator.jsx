@@ -22,10 +22,17 @@ export default function RingrCalculator() {
 
   const totalMinutes = calls * duration;
   let rate = 0.17;
-  if (totalMinutes > 100000) rate = 0.10;
-  else if (totalMinutes > 50000) rate = 0.14;
-  else if (totalMinutes > 20000) rate = 0.15;
-  else if (totalMinutes > 10000) rate = 0.16;
+  if (totalMinutes > 100000) {
+    rate = 0.10;
+  } else if (totalMinutes > 50000) {
+    rate = 0.14;
+  } else if (totalMinutes > 20000) {
+    rate = 0.15;
+  } else if (totalMinutes > 10000) {
+    rate = 0.16;
+  } else {
+    rate = 0.17;
+  }
 
   let ringrCost = Math.max(600, Math.round(totalMinutes * rate * 0.85));
 
