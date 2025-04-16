@@ -72,7 +72,7 @@ export default function RingrCalculator() {
 
   return (
     <div className="p-6 max-w-md mx-auto bg-[#F8F9FA] rounded-2xl shadow grid gap-4">
-      <h1 className="text-2x1 font-bold text-[#1D1E2C] text-center leading-tight">Ahorro estimado</h1>
+      <h1 className="text-2xl font-bold text-[#1D1E2C] text-center leading-tight">Ahorro estimado</h1>
       <p className="text-xs text-gray-500 text-center mb-2">Calcula el ahorro usando Ringr frente a personal interno.</p>
 
       <div className="grid gap-4 text-sm">
