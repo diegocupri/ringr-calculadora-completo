@@ -5,7 +5,7 @@ import { Label } from "./components/ui/label";
 import { Button } from "./components/ui/button";
 
 function formatNumber(num) {
-  return num.toLocaleString("es-ES");
+  return Math.floor(Number(num)).toLocaleString("es-ES");
 }
 
 function roundCalls(value) {
