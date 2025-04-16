@@ -5,7 +5,11 @@ import { Label } from "./components/ui/label";
 import { Button } from "./components/ui/button";
 
 function formatNumber(num) {
-  return Math.floor(Number(num)).toLocaleString("es-ES");
+  return new Intl.NumberFormat('es-ES', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+    useGrouping: true
+  }).format(num);
 }
 
 function roundCalls(value) {
