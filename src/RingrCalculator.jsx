@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardContent } from "../components/ui/card";
-import { Slider } from "../components/ui/slider";
-import { Label } from "../components/ui/label";
-import { Button } from "../components/ui/button";
+import { Card, CardContent } from "./components/ui/card";
+import { Slider } from "./components/ui/slider";
+import { Label } from "./components/ui/label";
+import { Button } from "./components/ui/button";
 
 function formatNumber(num) {
   return num.toLocaleString("es-ES");
