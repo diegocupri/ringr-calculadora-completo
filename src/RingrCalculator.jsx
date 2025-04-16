@@ -103,7 +103,7 @@ export default function RingrCalculator() {
           <div className="text-right text-base font-medium">{concurrent}</div>
         </div>
         <div className="grid gap-2">
-          <Label className="text-[#1D1E2C] mb-1">Salario bruto mensual</Label>
+          <Label className="text-[#1D1E2C] mb-1">Tus costes operativos actuales</Label>
           <Slider className={sliderThumbClass} value={[salary]} min={1260} max={3000} step={10} onValueChange={([v]) => setSalary(v)} />
           <div className="text-right text-base font-medium">{formatNumber(salary)} €</div>
         </div>
@@ -112,7 +112,7 @@ export default function RingrCalculator() {
       <Card className="bg-white border border-[#E0E0E0]">
         <CardContent className="p-5 grid grid-cols-2 gap-y-5 gap-x-4 text-sm text-center">
           <div>
-            <p className="text-[#1D1E2C]">Coste empleados*</p>
+            <p className="text-[#1D1E2C]">Costes operativos*</p>
             <p className="text-lg font-semibold text-[#1D1E2C]">{formatNumber(Math.floor(employeeCost))} €</p>
           </div>
           <div>
@@ -120,8 +120,8 @@ export default function RingrCalculator() {
             <p className="text-lg font-semibold text-[#8857FC]">{formatNumber(Math.floor(ringrCost))} €</p>
           </div>
           <div>
-            <p className="text-[#1D1E2C]">Nº Empleados</p>
-            <p className="text-lg font-semibold">{formatNumber(Math.floor(employeesNeeded))} </p>
+            <p className="text-[#1D1E2C]">Alcance</p>
+            <p className="text-lg font-semibold">{formatNumber(Math.floor(employeesNeeded * 100))}%</p>
           </div>
           <div>
             <p className="text-[#1D1E2C]">Ahorro</p>
