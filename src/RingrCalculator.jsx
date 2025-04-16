@@ -89,7 +89,7 @@ export default function RingrCalculator() {
       <div className="grid gap-4 text-sm">
         <div className="grid gap-2">
           <Label className="text-[#1D1E2C] mb-1">Llamadas al mes</Label>
-          <Slider className={sliderThumbClass} value={[calls]} min={100} max={100000} step={100} onValueChange={([v]) => setCalls(roundCalls(v))} />
+          <Slider className={sliderThumbClass} value={[calls]} min={1000} max={100000} step={100} onValueChange={([v]) => setCalls(roundCalls(v))} />
           <div className="text-right text-base font-medium">{formatNumber(calls)}</div>
         </div>
         <div className="grid gap-2">
@@ -113,19 +113,19 @@ export default function RingrCalculator() {
         <CardContent className="p-5 grid grid-cols-2 gap-y-5 gap-x-4 text-sm text-center">
           <div>
             <p className="text-[#1D1E2C]">Coste empleados*</p>
-            <p className="text-lg font-medium text-[#1D1E2C]">{formatNumber(Math.floor(employeeCost))} €</p>
+            <p className="text-lg font-semibold text-[#1D1E2C]">{formatNumber(Math.floor(employeeCost))} €</p>
           </div>
           <div>
             <p className="text-[#1D1E2C]">Coste Ringr</p>
-            <p className="text-lg font-medium text-[#8857FC]">{formatNumber(Math.floor(ringrCost))} €</p>
+            <p className="text-lg font-semibold text-[#8857FC]">{formatNumber(Math.floor(ringrCost))} €</p>
           </div>
           <div>
             <p className="text-[#1D1E2C]">Nº Empleados</p>
-            <p className="text-lg font-medium">{formatNumber(Math.floor(employeesNeeded))} €</p>
+            <p className="text-lg font-semibold">{formatNumber(Math.floor(employeesNeeded))} €</p>
           </div>
           <div>
             <p className="text-[#1D1E2C]">Ahorro</p>
-            <p className="text-lg font-medium text-green-600">{formatNumber(Math.floor(monthlySavings))} € ({savingsPercent}%)</p>
+            <p className="text-lg font-semibold text-green-600">{formatNumber(Math.floor(monthlySavings))} € ({savingsPercent}%)</p>
           </div>
           <div className="col-span-2">
             <Button className="w-full bg-[#8857FC] hover:bg-[#7740db] text-white text-sm px-4 py-2 rounded-xl">Solicitar demo</Button>
